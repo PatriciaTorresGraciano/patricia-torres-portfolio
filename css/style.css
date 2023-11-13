@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Handlee', serif;
+    font-family: 'nunito';
 }
 
 a {
@@ -31,7 +31,6 @@ a:hover {
     z-index: 9999;
     font-size: 18px;
     background-color: #FFB703;
-    font-weight: 700;
 }
 
 .navbar-nav li a {
@@ -213,3 +212,8 @@ a:hover {
         width: 90% !important;
     }
 }
+
+@font-face {
+    font-family: [nunito];
+    src: url(https://fonts.google.com/specimen/Nunito?query=nunito);
+ }
