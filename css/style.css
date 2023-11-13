@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Handlee', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FFB703;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFF;
+  
+}
+
+.navbar {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    font-size: 18px;
+    background-color: #FFB703;
+    font-weight: 700;
+}
+
+.navbar-nav li a {
+    color: white;
+    transition: all 1s;
+}
+
+.navbar-nav li a:hover {
+    color: #000;
+}
+
+.navbar .navbar-brand {
+    font-size: 24px;
+}
+
+/* -------------------home---------------- */
+.home {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.home-container .layer .home-text h1 {
+    font-size: 50px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+
+
+.home-container .layer .home-text p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.home-container .layer .home-text button {
+    background-color: #FFB400;
+    
+   
+    border: none;
+}
+
+.home-container .layer .home-text button a {
+    color: white;
+}
+.home-container .layer .home-text button a:hover {
+    color: #FFB703;
+}
+
+.home-container .layer .home-text button:hover {
+    background-color: #FFF;
+    color: #FFB703;
+}
+
+/* ------------------about---------------- */
+.about-section {
+    background-color: #fff;
+    color: #000;
+}
+
+.about-section .container h2 {
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.about-section .container h2::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 10%;
+    bottom: 0;
+    right: 45%;
+}
+
+.about-section .container p {
+    color: #000;
+}
+
+.about-section .container button {
+    background-color: white;
+    border: none;
+    transition: all .5s;
+}
+
+.about-section .container button a {
+    color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+.about-section .container button:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* -------------------Service------------ */
+.title h2 {
+    position: relative;
+}
+
+
+
+.Service-section .content i {
+    color: #FFB703;
+    font-size: 40px;
+    padding: 10px 0px;
+}
+
+.Service-section .content p {
+    color: rgb(121, 119, 119);
+}
+
+/* ---------------portfolio--------------- */
+.portfolio .item-layer {
+    background-color: #35201a80;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+.portfolio .item:hover .item-layer {
+    opacity: 1;
+}
+
+/* --------------contact------------- */
+
+.contact {
+    background: rgba(255, 180, 0, 0.60);
+}
+
+.contact .btn-submit {
+    background-color: #FFB703;
+    color: white;
+    font-weight: bold;
+    transition: all .4s;
+}
+
+.contact .btn-submit:hover {
+    background-color: #fff;
+    color: #FFB703;
+}
+
+.verMais {
+    border-radius: 5px;
+    border: 1px solid #FFB703;
+    display: inline-flex;
+    background: rgba(255, 180, 0, 0);
+    color: #FFB703 !important;
+    text-decoration: none;
+   
+}
+
+.verMais:hover {
+    border-radius: 5px;
+    border: 1px solid #FFB703;
+    display: inline-flex;
+    background-color: #FFB703;
+    color: #FFB703 !important;
+   
+}
+
+
+
+@media (max-width: 576px) {
+    .portfolio .item-layer {
+        background-color: #f4623a4d;
+        opacity: 1;
+    }
+
+    .contact .contact-form {
+        width: 90% !important;
+    }
+}
